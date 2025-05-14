@@ -13,7 +13,7 @@ fi
 
 # check is proccess running
 is_process_running() {
-  pgrep -x "$PROCESS_NAME" > /dev/null 2>&1
+  systemctl is-active "$PROCESS_NAME.service" > /dev/null 2>&1
   return $?
 }
 
