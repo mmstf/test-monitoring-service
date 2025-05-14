@@ -1,9 +1,9 @@
 #!/bin/bash
 
-set -exu
+set -eu
 
-PROCESS_NAME="test"
-LOG_FILE="./monitoring.log"
+PROCESS_NAME="monitoring-test"
+LOG_FILE="/var/log/monitoring.log"
 MONITORING_URL="https://test.com/monitoring/test/api"
 
 # check Log file exists
